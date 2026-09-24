@@ -22,6 +22,7 @@ class LookupPage(Page):
     result_types: tuple[type, ...] = ()
 
     # ---- subclass hooks (suggest/lookup run on a worker thread)
+    # pylint: disable=unused-argument  # default hooks ignore their inputs
 
     def suggest(self, query: str) -> list[str]:
         return []

@@ -30,7 +30,7 @@ def _key() -> str:
     return "" if key == PLACEHOLDER else key
 
 
-def require_key() -> str:
+def strict_key() -> str:
     # key is externally-provided; deployer sets UEX_API_KEY in .env — see README
     key = _key()
     if not key:
@@ -45,7 +45,6 @@ def require_key() -> str:
     return key
 
 
-_strict_key = require_key  # Uex.__init__'s `require_key` flag shadows the function name
 
 
 def key_status() -> str | None:
@@ -96,7 +95,7 @@ class CommodityResult:
 class Uex:
     def __init__(self, session: requests.Session | None = None, timeout_s: float = 15.0,
                  require_key: bool = True) -> None:
-        key = _strict_key() if require_key else _key()  # strict: fail loudly at construct time
+        key = strict_key() if require_key else _key()  # strict: fail loudly at construct time
         self.anonymous = not key
         self._session = session or requests.Session()
         self._session.headers.update({"Accept": "application/json", "User-Agent": USER_AGENT})
@@ -132,7 +131,7 @@ class Uex:
         names = [c.name for c in self.list_commodities()]
         prefix = [n for n in names if n.lower().startswith(q)]
         contains = [n for n in names if q in n.lower() and n not in prefix]
-        fuzzy = [n for n in difflib.get_close_matches(q, [n.lower() for n in names], n=limit, cutoff=0.6)]
+        fuzzy = difflib.get_close_matches(q, [n.lower() for n in names], n=limit, cutoff=0.6)
         fuzzy_names = [next(x for x in names if x.lower() == f) for f in fuzzy]
         ranked = sorted(prefix, key=len) + sorted(contains, key=len) + fuzzy_names
         return list(dict.fromkeys(ranked))[:limit]

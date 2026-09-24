@@ -114,7 +114,8 @@ class CustomWordsPage(Page):
         for c in customs:
             sub = c.get("category", "")
             sub = "" if sub == CUSTOM_CATEGORY else f"  ({sub})"
-            self.existing_list.insert("end", f"{c.get('label', c['id'])}{sub}   →  {describe_action(c.get('action', {}))}")
+            action = describe_action(c.get('action', {}))
+            self.existing_list.insert("end", f"{c.get('label', c['id'])}{sub}   →  {action}")
         subcats = []
         for c in customs:
             cat = c.get("category", "")

@@ -65,7 +65,7 @@ class HowToPage(Page):
             if kind == "h":
                 self.text.insert("end", line + "\n", "h")
             elif kind == "say":
-                self.text.insert("end", "  “" + line.split("  — ")[0] + "”", "say")
+                self.text.insert("end", "  “" + line.split("  — ", maxsplit=1)[0] + "”", "say")
                 if "  — " in line:
                     self.text.insert("end", "  — " + line.split("  — ", 1)[1], "p")
                 self.text.insert("end", "\n")

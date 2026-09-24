@@ -44,7 +44,8 @@ class LiveServicesPatched(unittest.TestCase):
             ux = uex.Uex(session=self.uex_session or FakeSession(uex_route), require_key=False)
         wk = wiki.Wiki(session=self.wiki_session or FakeSession(wiki_route))
         for target, value in ((scwiki, sc), (uex, ux), (wiki, wk)):
-            name = {"scwiki": "default_client", "uex": "get_client", "wiki": "default_client"}[target.__name__.split(".")[-1]]
+            getters = {"scwiki": "default_client", "uex": "get_client", "wiki": "default_client"}
+            name = getters[target.__name__.rsplit(".", maxsplit=1)[-1]]
             p = mock.patch.object(target, name, return_value=value)
             p.start()
             self.addCleanup(p.stop)
@@ -144,7 +145,8 @@ class KeybindQuestionTests(unittest.TestCase):
 
     def test_falls_back_to_default_game_reference(self):
         self.assertEqual(self.ask("what is f two bound to").speech,
-                         "F2 isn't used by your voice commands. In the default Star Citizen controls it is: Open Starmap.")
+                         "F2 isn't used by your voice commands. "
+                         "In the default Star Citizen controls it is: Open Starmap.")
 
     def test_unknown_key(self):
         self.assertEqual(self.ask("what is f nine bound to").speech,
@@ -223,7 +225,8 @@ class MiningOfflineTests(LiveServicesPatched):
 
     def test_no_fallback_apologises(self):
         a = self.ask("where is quantainium mined")
-        self.assertEqual(a.speech, "Sorry, I couldn't reach the Star Citizen Wiki to look up Quantainium mining locations.")
+        self.assertEqual(a.speech, "Sorry, I couldn't reach the Star Citizen Wiki "
+                                   "to look up Quantainium mining locations.")
 
 
 class ComponentQuestionTests(LiveServicesPatched):

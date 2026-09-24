@@ -44,7 +44,7 @@ _ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
           "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"]
 
 
-def _num_kind(word: str) -> str | None:
+def num_kind(word: str) -> str | None:
     if word in _UNITS:
         return "unit"
     if word in _TEENS:
@@ -68,7 +68,7 @@ def _parse_run(words: list[str]) -> int:
     total = cur = 0
     last: str | None = None
     for w in words:
-        kind = _num_kind(w)
+        kind = num_kind(w)
         ok = {
             "unit": last in (None, "tens", "hundred", "thousand"),
             "teen": last in (None, "hundred", "thousand"),
@@ -97,23 +97,23 @@ def _parse_run(words: list[str]) -> int:
     return int("".join(str(g) for g in groups))
 
 
-def _number_runs(tokens: list[str]) -> list[tuple[int, int, int]]:
+def number_runs(tokens: list[str]) -> list[tuple[int, int, int]]:
     """[(start, end_exclusive, value)] for runs of number words in lowercase tokens."""
     runs: list[tuple[int, int, int]] = []
     i = 0
     while i < len(tokens):
-        if _num_kind(tokens[i]) is None:
+        if num_kind(tokens[i]) is None:
             i += 1
             continue
         j = i
         words: list[str] = []
         while j < len(tokens):
             t = tokens[j]
-            if _num_kind(t) is not None:
+            if num_kind(t) is not None:
                 words.append(t)
                 j += 1
-            elif (t == "and" and words and _num_kind(words[-1]) in ("hundred", "thousand")
-                  and j + 1 < len(tokens) and _num_kind(tokens[j + 1]) is not None):
+            elif (t == "and" and words and num_kind(words[-1]) in ("hundred", "thousand")
+                  and j + 1 < len(tokens) and num_kind(tokens[j + 1]) is not None):
                 j += 1
             else:
                 break
@@ -125,7 +125,7 @@ def _number_runs(tokens: list[str]) -> list[tuple[int, int, int]]:
 def spoken_numbers(text: str) -> list[int]:
     """Numbers spoken as words, in order: 'four thousand two hundred seventy' -> [4270]."""
     tokens = re.findall(r"[a-z]+", (text or "").lower())
-    return [v for _, _, v in _number_runs(tokens)]
+    return [v for _, _, v in number_runs(tokens)]
 
 
 def normalize_spoken_name(text: str, roman: bool = True) -> str:
@@ -133,7 +133,7 @@ def normalize_spoken_name(text: str, roman: bool = True) -> str:
     raw = (text or "").split()
     low = [t.lower() for t in raw]
     tokens: list[tuple[str, str, int | None]] = []  # (kind, text, small_value)
-    runs = {s: (e, v) for s, e, v in _number_runs(low)}
+    runs = {s: (e, v) for s, e, v in number_runs(low)}
     i = 0
     while i < len(raw):
         if i in runs:
@@ -434,7 +434,8 @@ def parse_vehicle_prices(vehicle: dict) -> tuple[list[VehiclePrice], list[Vehicl
                                     str(loc.get("star_system_name") or "").strip(), int(value)))
         return sorted(out, key=lambda p: p.price)
 
-    return conv(prices.get("purchase") or [], "buy", "price_buy"), conv(prices.get("rental") or [], "rent", "price_rent")
+    return (conv(prices.get("purchase") or [], "buy", "price_buy"),
+            conv(prices.get("rental") or [], "rent", "price_rent"))
 
 
 # ------------------------------------------------------------------ speech
@@ -627,12 +628,12 @@ class ScWikiClient:
         return q, []
 
     def suggest_ships(self, query: str, limit: int = 10) -> list[str]:
-        _q, rows = self._vehicle_candidates(query)
+        __, rows = self._vehicle_candidates(query)
         return list(dict.fromkeys(str(r["name"]) for r in rows))[:limit]
 
     def find_ship(self, query: str) -> ShipResult:
         try:
-            q, rows = self._vehicle_candidates(query)
+            _, rows = self._vehicle_candidates(query)
         except FormatError:
             snap = _snapshot_for(query)
             if snap:

@@ -99,8 +99,7 @@ def event_key_name(keysym: str, keycode: int) -> str | None:
 class KeybindEditor(ttk.Frame):
     """Keybind entry with capture + modifier toggles. get()/set() the key string."""
 
-    def __init__(self, parent: tk.Misc, on_change: Callable[[], None] | None = None,
-                 allow_base: bool = True) -> None:
+    def __init__(self, parent: tk.Misc, on_change: Callable[[], None] | None = None) -> None:
         super().__init__(parent)
         self.on_change = on_change
         self.var = tk.StringVar()

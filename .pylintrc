@@ -1,0 +1,38 @@
+# Deckhand pylint config: keeps the bug-finding checks, relaxes rules that fight Tkinter GUIs or the one-line-comment style.
+[MAIN]
+# Same import path the app and tests run with: frontend/ is the GUI root, tests import helpers from frontend/tests.
+init-hook=import sys; sys.path[:0] = ['frontend', 'frontend/tests']
+# pywin32 ships C extensions; allow pylint to load them so their members are known.
+extension-pkg-allow-list=win32file,win32pipe,pywintypes
+py-version=3.10
+
+[FORMAT]
+max-line-length=120
+
+[BASIC]
+# PAGE_CLASS is each page module's export; _default/_client are lazy singletons; setUp/tearDownModule are unittest hooks.
+good-names=i,j,k,ex,Run,_,PAGE_CLASS,_default,_client,setUpModule,tearDownModule
+
+[MESSAGES CONTROL]
+# Docstrings: names carry the meaning and comments stay one line by project convention.
+# Tkinter: pages build widgets in helper methods, subclass deep ttk hierarchies and hold many widget attributes.
+# Robustness: GUI callbacks and worker threads catch broad exceptions on purpose so one failure never kills the app.
+# Structure: lazy imports keep start-up fast, sys.path setup precedes imports, and lookup singletons use module globals.
+disable=
+    missing-class-docstring,
+    missing-function-docstring,
+    attribute-defined-outside-init,
+    too-many-ancestors,
+    too-many-instance-attributes,
+    too-many-arguments,
+    too-many-positional-arguments,
+    too-many-statements,
+    too-many-branches,
+    too-many-return-statements,
+    too-many-public-methods,
+    too-few-public-methods,
+    broad-exception-caught,
+    import-outside-toplevel,
+    wrong-import-position,
+    global-statement,
+    duplicate-code

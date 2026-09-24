@@ -17,6 +17,7 @@ from fake_ctx import FakeCommands  # noqa: E402
 from pages.base import Answer  # noqa: E402
 from pages.voice import HistoryBuffer, format_entry  # noqa: E402
 from services import themes  # noqa: E402
+from services.tts_settings import TEST_PHRASE  # noqa: E402
 
 MY_PAGES = {
     "VOICE": "voice",
@@ -271,7 +272,8 @@ class MessageTests(ShellTestBase):
 
     def test_question_is_answered_spoken_logged_and_page_shown(self):
         self.feed({"type": "question", "text": "where can I mine iron"})
-        self.assertTrue(self.wait_for(lambda: {"type": "speak_text", "text": "Iron: Aberdeen, Daymar."} in self.ipc.sent))
+        spoken = {"type": "speak_text", "text": "Iron: Aberdeen, Daymar."}
+        self.assertTrue(self.wait_for(lambda: spoken in self.ipc.sent))
         self.assertEqual(self.answers, ["where can I mine iron"])
         self.assertIn("where can I mine iron", self.history_texts("heard"))
         self.assertIn("Iron: Aberdeen, Daymar.", self.history_texts("answer"))
@@ -350,7 +352,7 @@ class ThemeIntegrationTests(ShellTestBase):
 class TtsPanelTests(ShellTestBase):
     def test_test_voice_speaks_test_phrase(self):
         self.app.pages["CUSTOMIZE"].test_voice()
-        self.assertIn({"type": "speak_text", "text": deckhand_ui.TEST_PHRASE}, self.ipc.sent)
+        self.assertIn({"type": "speak_text", "text": TEST_PHRASE}, self.ipc.sent)
 
 
 class FullPageOrderTests(ShellTestBase):

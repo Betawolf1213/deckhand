@@ -78,8 +78,10 @@ class IpcClient:
             backoff = RECONNECT_INITIAL_S
             self._connected.set()
             if self._on_connection:
-                try: self._on_connection(True)
-                except Exception: pass
+                try:
+                    self._on_connection(True)
+                except Exception:  # a GUI callback error must not kill the pipe thread
+                    pass
 
             try:
                 while not self._stopping.is_set():
@@ -88,7 +90,7 @@ class IpcClient:
                     if avail == 0:
                         time.sleep(0.01)
                         continue
-                    hr, data = win32file.ReadFile(self._handle, min(avail, READ_CHUNK))
+                    _, data = win32file.ReadFile(self._handle, min(avail, READ_CHUNK))
                     if not data:
                         break
                     buffer += data
@@ -100,8 +102,10 @@ class IpcClient:
             finally:
                 self._connected.clear()
                 if self._on_connection:
-                    try: self._on_connection(False)
-                    except Exception: pass
+                    try:
+                        self._on_connection(False)
+                    except Exception:  # a GUI callback error must not kill the pipe thread
+                        pass
                 self._close_handle()
 
     def _writer_loop(self) -> None:
@@ -147,8 +151,10 @@ class IpcClient:
 
     def _close_handle(self) -> None:
         if self._handle is not None:
-            try: win32file.CloseHandle(self._handle)
-            except pywintypes.error: pass
+            try:
+                win32file.CloseHandle(self._handle)
+            except pywintypes.error:
+                pass
             self._handle = None
 
     def _dispatch_line(self, line: bytes) -> None:

@@ -21,29 +21,29 @@ class ShipFinderPage(LookupPage):
     def lookup(self, query: str) -> scwiki.ShipResult:
         return scwiki.find_ship(query)
 
-    def render(self, r: scwiki.ShipResult) -> list[str]:
-        lines = [r.name.upper()]
-        if r.manufacturer:
-            lines.append(f"Manufacturer: {r.manufacturer}")
-        if r.offline:
-            lines += ["", "*** OFFLINE SNAPSHOT — not live data ***", r.note]
+    def render(self, result: scwiki.ShipResult) -> list[str]:
+        lines = [result.name.upper()]
+        if result.manufacturer:
+            lines.append(f"Manufacturer: {result.manufacturer}")
+        if result.offline:
+            lines += ["", "*** OFFLINE SNAPSHOT — not live data ***", result.note]
         lines.append("")
-        lines.append(f"BUY — {len(r.purchase)} location(s), cheapest first")
-        lines += [f"  • {p.line()}" for p in r.purchase] or ["  No purchase locations found."]
+        lines.append(f"BUY — {len(result.purchase)} location(s), cheapest first")
+        lines += [f"  • {p.line()}" for p in result.purchase] or ["  No purchase locations found."]
         lines.append("")
-        lines.append(f"RENT — {len(r.rental)} location(s), cheapest first")
-        lines += [f"  • {p.line()}" for p in r.rental] or ["  No rental locations found."]
-        lines += ["", f"Source: {r.source}",
+        lines.append(f"RENT — {len(result.rental)} location(s), cheapest first")
+        lines += [f"  • {p.line()}" for p in result.rental] or ["  No rental locations found."]
+        lines += ["", f"Source: {result.source}",
                   "Community data can change with patches and player-submitted shop updates."]
         return lines
 
-    def speech(self, r: scwiki.ShipResult) -> str:
-        return scwiki.ship_speech(r)
+    def speech(self, result: scwiki.ShipResult) -> str:
+        return scwiki.ship_speech(result)
 
-    def status_for(self, r: scwiki.ShipResult) -> str:
-        if r.offline:
-            return f"Showing the offline snapshot for {r.name}. {r.note}"
-        return f"Loaded {len(r.purchase)} purchase and {len(r.rental)} rental location(s) for {r.name}."
+    def status_for(self, result: scwiki.ShipResult) -> str:
+        if result.offline:
+            return f"Showing the offline snapshot for {result.name}. {result.note}"
+        return f"Loaded {len(result.purchase)} purchase and {len(result.rental)} rental location(s) for {result.name}."
 
 
 PAGE_CLASS = ShipFinderPage

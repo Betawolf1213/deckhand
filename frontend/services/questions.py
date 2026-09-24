@@ -85,7 +85,7 @@ def _clean_name(name: str, drop_suffix: tuple[str, ...] = ()) -> str:
     words = name.strip().split()
     while words and words[0] in _ARTICLES:
         nxt = words[1] if len(words) > 1 else ""
-        if words[0] == "a" and (len(nxt) == 1 or scwiki._num_kind(nxt)):  # noqa: SLF001
+        if words[0] == "a" and (len(nxt) == 1 or scwiki.num_kind(nxt)):
             break
         words.pop(0)
     n = " ".join(words)
@@ -139,7 +139,7 @@ def _number_at(toks: list[str], i: int) -> tuple[int, int] | None:
         return None
     if toks[i].isdigit():
         return int(toks[i]), 1
-    runs = scwiki._number_runs(toks[i:])  # noqa: SLF001 - shared spoken-number parser
+    runs = scwiki.number_runs(toks[i:])
     if runs and runs[0][0] == 0:
         return runs[0][2], runs[0][1]
     return None
@@ -346,17 +346,17 @@ def reverse_keybind_answer(name: str, commands: list[dict]) -> Answer | None:
     q = _clean_name(name, ("command", "action"))
     if not q:
         return None
-    best: tuple[float, dict] | None = None
+    best_score, best_cmd = 0.0, None
     for cmd in commands:
         names = [_label(cmd).lower(), str(cmd.get("id", "")).replace("_", " ")] + \
                 [str(p).lower() for p in cmd.get("phrases", [])]
         score = max((1.0 if n == q else difflib.SequenceMatcher(None, q, n).ratio()) for n in names if n) \
             if any(names) else 0.0
-        if best is None or score > best[0]:
-            best = (score, cmd)
-    if best is None or best[0] < 0.75:
+        if best_cmd is None or score > best_score:
+            best_score, best_cmd = score, cmd
+    if best_cmd is None or best_score < 0.75:
         return Answer(f"I couldn't find a command called {q}.")
-    cmd = best[1]
+    cmd = best_cmd
     return Answer(f"{_label(cmd)} is on {_command_key_display(cmd)}.",
                   page="KEYBINDS", payload={"kind": "by_command", "command_id": cmd.get("id", "")})
 

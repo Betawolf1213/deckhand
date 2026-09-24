@@ -29,7 +29,7 @@ from app_paths import (  # noqa: E402
 )
 from pages.base import Page  # noqa: E402
 from services import themes, ui_settings  # noqa: E402
-from services.tts_settings import TEST_PHRASE, TtsSettings  # noqa: E402,F401  (re-export)
+from services.tts_settings import TtsSettings  # noqa: E402
 
 log = logging.getLogger("deckhand")
 log.addHandler(logging.NullHandler())
@@ -183,7 +183,8 @@ class App:
 
     # ---------------------------------------------------------- construction
     def _restore_geometry(self) -> None:
-        geo = (self.settings.get("window") or {}).get("geometry") if isinstance(self.settings.get("window"), dict) else None
+        window = self.settings.get("window")
+        geo = window.get("geometry") if isinstance(window, dict) else None
         try:
             self.root.geometry(geo if isinstance(geo, str) and geo else DEFAULT_GEOMETRY)
         except tk.TclError:
@@ -537,7 +538,7 @@ class App:
 def main() -> None:
     if sys.stderr is None or sys.stdout is None:  # pythonw: no console streams
         try:
-            stream = open(FRONTEND_LOG, "a", encoding="utf-8", buffering=1)
+            stream = open(FRONTEND_LOG, "a", encoding="utf-8", buffering=1)  # pylint: disable=consider-using-with
             sys.stdout = sys.stdout or stream
             sys.stderr = sys.stderr or stream
         except OSError:

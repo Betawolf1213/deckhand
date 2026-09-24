@@ -47,7 +47,7 @@ class KeybindsPage(Page):
         for col, text, width in (("action", "ACTION", 220), ("keys", "KEYS", 150),
                                  ("category", "CATEGORY", 140), ("phrases", "PHRASES", 320)):
             self.tree.heading(col, text=text)
-            self.tree.column(col, width=width, anchor="w", stretch=(col == "phrases"))
+            self.tree.column(col, width=width, anchor="w", stretch=col == "phrases")
         sb = ttk.Scrollbar(left, orient="vertical", command=self.tree.yview)
         self.tree.configure(yscrollcommand=sb.set)
         self.tree.pack(side="left", fill="both", expand=True)

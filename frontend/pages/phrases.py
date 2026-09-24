@@ -246,7 +246,8 @@ class PhrasesPage(Page):
             return
         c = self.store.get(cid) or {}
         self.ctx.history(
-            f"Saved {len(c.get('phrases', []))} phrase(s) and '{key_display(c.get('action', {})) or describe_action(c.get('action', {}))}' "
+            f"Saved {len(c.get('phrases', []))} phrase(s) and "
+            f"'{key_display(c.get('action', {})) or describe_action(c.get('action', {}))}' "
             f"for {c.get('label', cid)}.", "info")
         self.select_command(cid)
 
