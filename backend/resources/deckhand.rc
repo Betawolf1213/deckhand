@@ -1,0 +1,9 @@
+// Embeds the manifest: requireAdministrator if ELEVATE (release), asInvoker in debug (no UAC).
+
+#include <winresrc.h>
+
+#ifdef ELEVATE
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "app.manifest"
+#else
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "app.asinvoker.manifest"
+#endif

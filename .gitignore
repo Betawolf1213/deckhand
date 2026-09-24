@@ -1,0 +1,42 @@
+# Secrets and local state
+.env
+config/ui_settings.json
+config/commands.json
+*.log
+
+# Zig build artifacts
+zig-cache/
+zig-out/
+.zig-cache/
+
+# Models and Vosk runtime (downloaded by scripts/fetch_models.ps1)
+models/
+!models/.gitkeep
+vendor/
+
+# Generated grammar (regenerated on backend start)
+generated/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Release packages
+*.zip
+release/

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deckhand commands file (v2; v1 files are still accepted)",
+  "type": "object",
+  "required": ["version", "commands"],
+  "properties": {
+    "version": { "type": "integer", "enum": [1, 2] },
+    "commands": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/command" }
+    }
+  },
+  "$defs": {
+    "command": {
+      "type": "object",
+      "required": ["id", "phrases", "action"],
+      "properties": {
+        "id":               { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "label":            { "type": "string", "description": "GUI display name; ignored by the backend" },
+        "category":         { "type": "string", "description": "GUI grouping; ignored by the backend" },
+        "phrases":          { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "Enabled phrases. The Vosk grammar is built from these only. May be empty (command never matches by voice)." },
+        "disabled_phrases": { "type": "array", "items": { "type": "string" }, "description": "Turned off in the GUI; ignored by the backend" },
+        "custom":           { "type": "boolean", "description": "Created on CUSTOM WORDS; ignored by the backend" },
+        "tts_ack":          { "type": "string" },
+        "action":           { "$ref": "#/$defs/action" }
+      },
+      "additionalProperties": true
+    },
+    "action": {
+      "oneOf": [
+        {
+          "type": "object", "required": ["type", "keys"],
+          "properties": { "type": { "const": "tap" },     "keys": { "type": "string" } },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "keys", "duration_ms"],
+          "properties": { "type": { "const": "hold" },    "keys": { "type": "string" }, "duration_ms": { "type": "integer", "minimum": 1, "maximum": 60000 } },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "keys"],
+          "properties": { "type": { "const": "press" },   "keys": { "type": "string" } },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "keys"],
+          "properties": { "type": { "const": "release" }, "keys": { "type": "string" } },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "button", "kind"],
+          "properties": {
+            "type":   { "const": "mouse" },
+            "button": { "enum": ["left", "right", "middle", "x1", "x2"] },
+            "kind":   { "enum": ["click", "down", "up", "double"] },
+            "keys":   { "type": "string", "description": "Optional keys held down around the click, e.g. \"left alt\" (ship zoom = left alt + right click)" }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "direction", "amount"],
+          "properties": {
+            "type":      { "const": "scroll" },
+            "direction": { "enum": ["up", "down"] },
+            "amount":    { "type": "integer", "minimum": 1, "maximum": 100 }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["type", "op"],
+          "properties": {
+            "type":      { "const": "system" },
+            "op":        { "enum": ["stop_listening", "stop_speaking", "say_random"] },
+            "responses": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "say_random: one entry is spoken at random" }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

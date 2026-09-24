@@ -1,0 +1,18 @@
+.{
+    .fingerprint = 0x8ea9b451e7d23530,
+    .name = .deckhand,
+    .version = "2.0.0",
+    // Pinned to 0.14.1: 0.15 made ArrayList unmanaged and reworked writers; bumping needs a port.
+    .minimum_zig_version = "0.14.1",
+
+    .dependencies = .{},
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "backend",
+        "config",
+        "README.md",
+        "LICENSE",
+    },
+}

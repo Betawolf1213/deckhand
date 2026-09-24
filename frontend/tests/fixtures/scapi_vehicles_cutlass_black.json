@@ -1,0 +1,699 @@
+{
+ "data": [
+  {
+   "uuid": "4484a044-bbd5-e716-736a-2dda30a3efa4",
+   "name": "Cutlass Black PYAM Exec",
+   "game_name": "Cutlass Black PYAM Exec",
+   "class_name": "DRAK_Cutlass_Black_Exec_Stealth",
+   "manufacturer": {
+    "name": "Drake Interplanetary",
+    "code": "DRAK",
+    "uuid": "6116471c-891d-4830-8968-650b6deafc00",
+    "link": "https://api.star-citizen.wiki/api/manufacturers/DRAK"
+   },
+   "uex_prices": {
+    "purchase": [],
+    "rental": []
+   },
+   "version": "4.10.0-LIVE.12519617"
+  },
+  {
+   "uuid": "bf785bee-f393-4904-aaa8-987952570938",
+   "name": "Cutlass Black PYAM Exec",
+   "game_name": "Cutlass Black PYAM Exec",
+   "class_name": "DRAK_Cutlass_Black_Exec_Military",
+   "manufacturer": {
+    "name": "Drake Interplanetary",
+    "code": "DRAK",
+    "uuid": "6116471c-891d-4830-8968-650b6deafc00",
+    "link": "https://api.star-citizen.wiki/api/manufacturers/DRAK"
+   },
+   "uex_prices": {
+    "purchase": [],
+    "rental": []
+   },
+   "version": "4.10.0-LIVE.12519617"
+  },
+  {
+   "uuid": "c926495d-3775-4fbf-88cc-bd243431a82f",
+   "name": "Cutlass Black",
+   "game_name": "Drake Cutlass Black",
+   "class_name": "DRAK_Cutlass_Black_BIS2950",
+   "manufacturer": {
+    "name": "Drake Interplanetary",
+    "code": "DRAK",
+    "uuid": "6116471c-891d-4830-8968-650b6deafc00",
+    "link": "https://api.star-citizen.wiki/api/manufacturers/DRAK"
+   },
+   "uex_prices": {
+    "purchase": [],
+    "rental": []
+   },
+   "version": "4.10.0-LIVE.12519617"
+  },
+  {
+   "uuid": "b58f7735-9454-4a0a-b724-2bc8d61961d7",
+   "name": "Cutlass Black",
+   "game_name": "Drake Cutlass Black",
+   "class_name": "DRAK_Cutlass_Black",
+   "manufacturer": {
+    "name": "Drake Interplanetary",
+    "code": "DRAK",
+    "uuid": "6116471c-891d-4830-8968-650b6deafc00",
+    "link": "https://api.star-citizen.wiki/api/manufacturers/DRAK"
+   },
+   "uex_prices": {
+    "purchase": [
+     {
+      "price_buy": 2010960,
+      "price_sell": null,
+      "price_rent": null,
+      "terminal_id": 149,
+      "terminal_code": "NDLOR",
+      "terminal_name": "New Deal - Teasa Spaceport - Lorville",
+      "starmap_location": {
+       "uuid": "f1759f46-e3c0-4dc1-94bc-c94488b58913",
+       "name": "Lorville",
+       "slug": "lorville",
+       "type_name": "LandingZone",
+       "parent_name": "Hurston",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/f1759f46-e3c0-4dc1-94bc-c94488b58913",
+       "web_url": "https://api.star-citizen.wiki/locations/f1759f46-e3c0-4dc1-94bc-c94488b58913"
+      },
+      "date_updated": "2026-09-11T05:11:35+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_sell/?id_terminal=149"
+     }
+    ],
+    "rental": [
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 773,
+      "terminal_code": "VRNPG",
+      "terminal_name": "Vantage Rentals - Pyro Gateway (Nyx)",
+      "starmap_location": {
+       "uuid": "a66119fa-6d93-4e56-bcd1-c9bd2c50beb7",
+       "name": "Pyro Gateway",
+       "slug": "pyro-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Nyx",
+       "star_system_name": "Nyx",
+       "link": "https://api.star-citizen.wiki/api/locations/a66119fa-6d93-4e56-bcd1-c9bd2c50beb7",
+       "web_url": "https://api.star-citizen.wiki/locations/a66119fa-6d93-4e56-bcd1-c9bd2c50beb7"
+      },
+      "date_updated": "2026-09-10T14:22:00+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=773"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 761,
+      "terminal_code": "TRANPG",
+      "terminal_name": "Traveler Rentals - Pyro Gateway (Nyx)",
+      "starmap_location": {
+       "uuid": "a66119fa-6d93-4e56-bcd1-c9bd2c50beb7",
+       "name": "Pyro Gateway",
+       "slug": "pyro-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Nyx",
+       "star_system_name": "Nyx",
+       "link": "https://api.star-citizen.wiki/api/locations/a66119fa-6d93-4e56-bcd1-c9bd2c50beb7",
+       "web_url": "https://api.star-citizen.wiki/locations/a66119fa-6d93-4e56-bcd1-c9bd2c50beb7"
+      },
+      "date_updated": "2026-09-10T14:01:18+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=761"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 800,
+      "terminal_code": "TRANSG",
+      "terminal_name": "Traveler Rentals - Stanton Gateway (Nyx)",
+      "starmap_location": {
+       "uuid": "6396623a-61bd-4ced-9c8b-77c47753ef8f",
+       "name": "Stanton Gateway",
+       "slug": "stanton-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Nyx",
+       "star_system_name": "Nyx",
+       "link": "https://api.star-citizen.wiki/api/locations/6396623a-61bd-4ced-9c8b-77c47753ef8f",
+       "web_url": "https://api.star-citizen.wiki/locations/6396623a-61bd-4ced-9c8b-77c47753ef8f"
+      },
+      "date_updated": "2026-08-30T18:52:01+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=800"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 814,
+      "terminal_code": "VARNSG",
+      "terminal_name": "Vantage Rentals - Stanton Gateway (Nyx)",
+      "starmap_location": {
+       "uuid": "6396623a-61bd-4ced-9c8b-77c47753ef8f",
+       "name": "Stanton Gateway",
+       "slug": "stanton-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Nyx",
+       "star_system_name": "Nyx",
+       "link": "https://api.star-citizen.wiki/api/locations/6396623a-61bd-4ced-9c8b-77c47753ef8f",
+       "web_url": "https://api.star-citizen.wiki/locations/6396623a-61bd-4ced-9c8b-77c47753ef8f"
+      },
+      "date_updated": "2026-08-30T18:25:20+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=814"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 740,
+      "terminal_code": "TRVPNG",
+      "terminal_name": "Traveler Rentals - Nyx Gateway (Pyro)",
+      "starmap_location": {
+       "uuid": "2cc61d92-b7bc-4533-9b97-6a32482a28f1",
+       "name": "Nyx Gateway",
+       "slug": "nyx-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Pyro",
+       "star_system_name": "Pyro",
+       "link": "https://api.star-citizen.wiki/api/locations/2cc61d92-b7bc-4533-9b97-6a32482a28f1",
+       "web_url": "https://api.star-citizen.wiki/locations/2cc61d92-b7bc-4533-9b97-6a32482a28f1"
+      },
+      "date_updated": "2026-09-11T21:25:21+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=740"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 753,
+      "terminal_code": "VRPNG",
+      "terminal_name": "Vantage Rentals - Nyx Gateway (Pyro)",
+      "starmap_location": {
+       "uuid": "2cc61d92-b7bc-4533-9b97-6a32482a28f1",
+       "name": "Nyx Gateway",
+       "slug": "nyx-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Pyro",
+       "star_system_name": "Pyro",
+       "link": "https://api.star-citizen.wiki/api/locations/2cc61d92-b7bc-4533-9b97-6a32482a28f1",
+       "web_url": "https://api.star-citizen.wiki/locations/2cc61d92-b7bc-4533-9b97-6a32482a28f1"
+      },
+      "date_updated": "2026-09-11T21:21:47+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=753"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 559,
+      "terminal_code": "VRSGA",
+      "terminal_name": "Vantage Rentals - Stanton Gateway (Pyro)",
+      "starmap_location": {
+       "uuid": "a1b8a311-6465-45dc-873d-e8d06d4372df",
+       "name": "Stanton Gateway",
+       "slug": "stanton-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Pyro",
+       "star_system_name": "Pyro",
+       "link": "https://api.star-citizen.wiki/api/locations/a1b8a311-6465-45dc-873d-e8d06d4372df",
+       "web_url": "https://api.star-citizen.wiki/locations/a1b8a311-6465-45dc-873d-e8d06d4372df"
+      },
+      "date_updated": "2026-09-08T23:00:23+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=559"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 529,
+      "terminal_code": "TRSGA",
+      "terminal_name": "Traveler Rentals - Cargo Center - Stanton Gateway (Pyro)",
+      "starmap_location": {
+       "uuid": "a1b8a311-6465-45dc-873d-e8d06d4372df",
+       "name": "Stanton Gateway",
+       "slug": "stanton-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Pyro",
+       "star_system_name": "Pyro",
+       "link": "https://api.star-citizen.wiki/api/locations/a1b8a311-6465-45dc-873d-e8d06d4372df",
+       "web_url": "https://api.star-citizen.wiki/locations/a1b8a311-6465-45dc-873d-e8d06d4372df"
+      },
+      "date_updated": "2026-09-08T22:57:12+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=529"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 167,
+      "terminal_code": "TRPTR",
+      "terminal_name": "Traveler Rentals - Cargo Center - Port Tressler",
+      "starmap_location": {
+       "uuid": "233238ee-adeb-4405-8045-49fa07370f37",
+       "name": "Port Tressler",
+       "slug": "port-tressler",
+       "type_name": "Manmade",
+       "parent_name": "microTech",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/233238ee-adeb-4405-8045-49fa07370f37",
+       "web_url": "https://api.star-citizen.wiki/locations/233238ee-adeb-4405-8045-49fa07370f37"
+      },
+      "date_updated": "2026-09-16T18:16:29+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=167"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 50274,
+      "terminal_id": 163,
+      "terminal_code": "TREVE",
+      "terminal_name": "Traveler Rentals - Cargo Center - Everus Harbor",
+      "starmap_location": {
+       "uuid": "ab29f65e-c792-4b1f-b23d-5810cb0ef416",
+       "name": "Everus Harbor",
+       "slug": "everus-harbor",
+       "type_name": "Manmade",
+       "parent_name": "Hurston",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/ab29f65e-c792-4b1f-b23d-5810cb0ef416",
+       "web_url": "https://api.star-citizen.wiki/locations/ab29f65e-c792-4b1f-b23d-5810cb0ef416"
+      },
+      "date_updated": "2026-09-14T05:05:38+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=163"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 153,
+      "terminal_code": "VRHL1",
+      "terminal_name": "Vantage Rentals - HUR-L1",
+      "starmap_location": {
+       "uuid": "689ff011-e2e9-4f6e-b5a3-7cea4bbc86c7",
+       "name": "HUR-L1 Green Glade Station",
+       "slug": "hur-l1-green-glade-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/689ff011-e2e9-4f6e-b5a3-7cea4bbc86c7",
+       "web_url": "https://api.star-citizen.wiki/locations/689ff011-e2e9-4f6e-b5a3-7cea4bbc86c7"
+      },
+      "date_updated": "2026-09-12T14:45:28+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=153"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 162,
+      "terminal_code": "VRHL2",
+      "terminal_name": "Vantage Rentals - HUR-L2",
+      "starmap_location": {
+       "uuid": "81e3150a-9c12-4715-85d4-afd6da69b8f0",
+       "name": "HUR-L2 Faithful Dream Station",
+       "slug": "hur-l2-faithful-dream-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/81e3150a-9c12-4715-85d4-afd6da69b8f0",
+       "web_url": "https://api.star-citizen.wiki/locations/81e3150a-9c12-4715-85d4-afd6da69b8f0"
+      },
+      "date_updated": "2026-09-12T13:27:16+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=162"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 158,
+      "terminal_code": "VRAL2",
+      "terminal_name": "Vantage Rentals - ARC-L2",
+      "starmap_location": {
+       "uuid": "45b909df-7b0c-40c9-ab83-a7cd7d3a980f",
+       "name": "ARC-L2 Lively Pathway Station",
+       "slug": "arc-l2-lively-pathway-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/45b909df-7b0c-40c9-ab83-a7cd7d3a980f",
+       "web_url": "https://api.star-citizen.wiki/locations/45b909df-7b0c-40c9-ab83-a7cd7d3a980f"
+      },
+      "date_updated": "2026-09-11T17:32:01+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=158"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 160,
+      "terminal_code": "VRCL1",
+      "terminal_name": "Vantage Rentals - CRU-L1",
+      "starmap_location": {
+       "uuid": "75e777cf-a055-4bc3-8ca7-602eb38be4f3",
+       "name": "CRU-L1 Ambitious Dream Station",
+       "slug": "cru-l1-ambitious-dream-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/75e777cf-a055-4bc3-8ca7-602eb38be4f3",
+       "web_url": "https://api.star-citizen.wiki/locations/75e777cf-a055-4bc3-8ca7-602eb38be4f3"
+      },
+      "date_updated": "2026-09-11T13:58:42+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=160"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 50274,
+      "terminal_id": 152,
+      "terminal_code": "VRLOR",
+      "terminal_name": "Vantage Rentals - Lorville",
+      "starmap_location": {
+       "uuid": "f1759f46-e3c0-4dc1-94bc-c94488b58913",
+       "name": "Lorville",
+       "slug": "lorville",
+       "type_name": "LandingZone",
+       "parent_name": "Hurston",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/f1759f46-e3c0-4dc1-94bc-c94488b58913",
+       "web_url": "https://api.star-citizen.wiki/locations/f1759f46-e3c0-4dc1-94bc-c94488b58913"
+      },
+      "date_updated": "2026-09-11T04:41:18+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=152"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 164,
+      "terminal_code": "VRML1",
+      "terminal_name": "Vantage Rentals - MIC-L1",
+      "starmap_location": {
+       "uuid": "f4b118f8-3102-4a5c-b8ca-ff013c2f674a",
+       "name": "MIC-L1 Shallow Frontier Station",
+       "slug": "mic-l1-shallow-frontier-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/f4b118f8-3102-4a5c-b8ca-ff013c2f674a",
+       "web_url": "https://api.star-citizen.wiki/locations/f4b118f8-3102-4a5c-b8ca-ff013c2f674a"
+      },
+      "date_updated": "2026-09-10T16:06:20+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=164"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 323,
+      "terminal_code": "TRSNG",
+      "terminal_name": "Traveler Rentals - Cargo Center - Nyx Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "e1501a68-09e5-472e-93a4-01efcde8c8f8",
+       "name": "Nyx Gateway",
+       "slug": "nyx-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/e1501a68-09e5-472e-93a4-01efcde8c8f8",
+       "web_url": "https://api.star-citizen.wiki/locations/e1501a68-09e5-472e-93a4-01efcde8c8f8"
+      },
+      "date_updated": "2026-09-09T18:57:30+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=323"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 324,
+      "terminal_code": "VRSNG",
+      "terminal_name": "Vantage Rentals - Nyx Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "e1501a68-09e5-472e-93a4-01efcde8c8f8",
+       "name": "Nyx Gateway",
+       "slug": "nyx-gateway-2",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/e1501a68-09e5-472e-93a4-01efcde8c8f8",
+       "web_url": "https://api.star-citizen.wiki/locations/e1501a68-09e5-472e-93a4-01efcde8c8f8"
+      },
+      "date_updated": "2026-09-09T16:17:57+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=324"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 50274,
+      "terminal_id": 319,
+      "terminal_code": "VRPGA",
+      "terminal_name": "Vantage Rentals - Pyro Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "59b22155-405f-4785-9f73-d2028b46f5c3",
+       "name": "Pyro Gateway",
+       "slug": "pyro-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/59b22155-405f-4785-9f73-d2028b46f5c3",
+       "web_url": "https://api.star-citizen.wiki/locations/59b22155-405f-4785-9f73-d2028b46f5c3"
+      },
+      "date_updated": "2026-09-08T23:31:55+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=319"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 50274,
+      "terminal_id": 312,
+      "terminal_code": "TRPGA",
+      "terminal_name": "Traveler Rentals - Cargo Center - Pyro Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "59b22155-405f-4785-9f73-d2028b46f5c3",
+       "name": "Pyro Gateway",
+       "slug": "pyro-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/59b22155-405f-4785-9f73-d2028b46f5c3",
+       "web_url": "https://api.star-citizen.wiki/locations/59b22155-405f-4785-9f73-d2028b46f5c3"
+      },
+      "date_updated": "2026-09-08T23:27:53+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=312"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 267,
+      "terminal_code": "VRAL4",
+      "terminal_name": "Vantage Rentals - ARC-L4",
+      "starmap_location": {
+       "uuid": "2dbccd4e-81de-45fa-a24c-cd32d29a8ec4",
+       "name": "ARC-L4 Faint Glen Station",
+       "slug": "arc-l4-faint-glen-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/2dbccd4e-81de-45fa-a24c-cd32d29a8ec4",
+       "web_url": "https://api.star-citizen.wiki/locations/2dbccd4e-81de-45fa-a24c-cd32d29a8ec4"
+      },
+      "date_updated": "2026-09-08T05:01:49+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=267"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 166,
+      "terminal_code": "VRML5",
+      "terminal_name": "Vantage Rentals - MIC-L5",
+      "starmap_location": {
+       "uuid": "54ab7b59-e808-43c4-9e5b-fbfaa03eb3d5",
+       "name": "MIC-L5 Modern Icarus Station",
+       "slug": "mic-l5-modern-icarus-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/54ab7b59-e808-43c4-9e5b-fbfaa03eb3d5",
+       "web_url": "https://api.star-citizen.wiki/locations/54ab7b59-e808-43c4-9e5b-fbfaa03eb3d5"
+      },
+      "date_updated": "2026-09-08T02:54:08+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=166"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 291,
+      "terminal_code": "TRTGA",
+      "terminal_name": "Traveler Rentals - Cargo Center - Terra Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "a3a7fa73-42bd-40ff-958c-e5c0d300ddc8",
+       "name": "Terra Gateway",
+       "slug": "terra-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/a3a7fa73-42bd-40ff-958c-e5c0d300ddc8",
+       "web_url": "https://api.star-citizen.wiki/locations/a3a7fa73-42bd-40ff-958c-e5c0d300ddc8"
+      },
+      "date_updated": "2026-09-05T03:42:57+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=291"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 298,
+      "terminal_code": "VRTGA",
+      "terminal_name": "Vantage Rentals - Terra Gateway (Stanton)",
+      "starmap_location": {
+       "uuid": "a3a7fa73-42bd-40ff-958c-e5c0d300ddc8",
+       "name": "Terra Gateway",
+       "slug": "terra-gateway",
+       "type_name": "Manmade",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/a3a7fa73-42bd-40ff-958c-e5c0d300ddc8",
+       "web_url": "https://api.star-citizen.wiki/locations/a3a7fa73-42bd-40ff-958c-e5c0d300ddc8"
+      },
+      "date_updated": "2026-09-05T03:16:53+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=298"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 346,
+      "terminal_code": "TRSER",
+      "terminal_name": "Traveler Rentals - Cargo Center - Seraphim",
+      "starmap_location": {
+       "uuid": "45d2d370-9fab-4e6b-b84b-e9c913bc316a",
+       "name": "Seraphim Station",
+       "slug": "seraphim-station",
+       "type_name": "Manmade",
+       "parent_name": "Crusader",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/45d2d370-9fab-4e6b-b84b-e9c913bc316a",
+       "web_url": "https://api.star-citizen.wiki/locations/45d2d370-9fab-4e6b-b84b-e9c913bc316a"
+      },
+      "date_updated": "2026-09-03T03:59:51+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=346"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 157,
+      "terminal_code": "VRAL1",
+      "terminal_name": "Vantage Rentals - ARC-L1",
+      "starmap_location": {
+       "uuid": "59485d8c-7947-4e00-871c-d35f6451aab8",
+       "name": "ARC-L1 Wide Forest Station",
+       "slug": "arc-l1-wide-forest-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/59485d8c-7947-4e00-871c-d35f6451aab8",
+       "web_url": "https://api.star-citizen.wiki/locations/59485d8c-7947-4e00-871c-d35f6451aab8"
+      },
+      "date_updated": "2026-09-02T14:03:18+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=157"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 156,
+      "terminal_code": "TRBAI",
+      "terminal_name": "Traveler Rentals - Cargo Center - Baijini Point",
+      "starmap_location": {
+       "uuid": "164ca676-83eb-448d-ab0b-1ddde8a9c0bd",
+       "name": "Baijini Point",
+       "slug": "baijini-point",
+       "type_name": "Manmade",
+       "parent_name": "ArcCorp",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/164ca676-83eb-448d-ab0b-1ddde8a9c0bd",
+       "web_url": "https://api.star-citizen.wiki/locations/164ca676-83eb-448d-ab0b-1ddde8a9c0bd"
+      },
+      "date_updated": "2026-08-30T23:48:51+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=156"
+     },
+     {
+      "price_buy": null,
+      "price_sell": null,
+      "price_rent": 52920,
+      "terminal_id": 165,
+      "terminal_code": "VRML2",
+      "terminal_name": "Vantage Rentals - MIC-L2",
+      "starmap_location": {
+       "uuid": "f602528f-acf3-4564-960c-fc344269a7a9",
+       "name": "MIC-L2 Long Forest Station",
+       "slug": "mic-l2-long-forest-station",
+       "type_name": "Manmade_VisibleOnInteraction",
+       "parent_name": "Stanton",
+       "star_system_name": "Stanton",
+       "link": "https://api.star-citizen.wiki/api/locations/f602528f-acf3-4564-960c-fc344269a7a9",
+       "web_url": "https://api.star-citizen.wiki/locations/f602528f-acf3-4564-960c-fc344269a7a9"
+      },
+      "date_updated": "2026-08-28T20:08:42+00:00",
+      "game_version": "4.10.0-LIVE.12519617",
+      "uex_link": "https://uexcorp.space/vehicles/home/list/in_game_rent/?id_terminal=165"
+     }
+    ]
+   },
+   "version": "4.10.0-LIVE.12519617"
+  }
+ ],
+ "meta": {
+  "current_page": 1,
+  "from": 1,
+  "last_page": 1,
+  "path": "https://api.star-citizen.wiki/api/vehicles",
+  "per_page": 20,
+  "to": 4,
+  "total": 4,
+  "valid_relations": [
+   "shipMatrixVehicle",
+   "components",
+   "shipmatrixvehicle.components",
+   "hardpoints",
+   "ports"
+  ]
+ }
+}

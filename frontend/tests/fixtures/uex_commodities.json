@@ -1,0 +1,1442 @@
+{
+ "status": "ok",
+ "http_code": 200,
+ "data": [
+  {
+   "id": 1,
+   "name": "Agricium",
+   "code": "AGRI",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 2,
+   "name": "Agricium (Ore)",
+   "code": "AGRI",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 3,
+   "name": "Agricultural Supplies",
+   "code": "AGRS",
+   "kind": "Agricultural",
+   "is_mineral": 0
+  },
+  {
+   "id": 4,
+   "name": "Altruciatoxin",
+   "code": "AUTR",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 5,
+   "name": "Aluminum",
+   "code": "ALUM",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 6,
+   "name": "Aluminum (Ore)",
+   "code": "ALUM",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 7,
+   "name": "Amioshi Plague",
+   "code": "AMIP",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 8,
+   "name": "Aphorite",
+   "code": "APHO",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 9,
+   "name": "Astatine",
+   "code": "ASTA",
+   "kind": "Halogen",
+   "is_mineral": 0
+  },
+  {
+   "id": 10,
+   "name": "Audio-Visual Equipment",
+   "code": "AUDI",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 11,
+   "name": "Beryl",
+   "code": "BERY",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 12,
+   "name": "Beryl (Raw)",
+   "code": "BERY",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 13,
+   "name": "Bexalite",
+   "code": "BEXA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 14,
+   "name": "Bexalite (Raw)",
+   "code": "BEXA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 15,
+   "name": "Borase",
+   "code": "BORA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 16,
+   "name": "Borase (Ore)",
+   "code": "BORA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 17,
+   "name": "Chlorine",
+   "code": "CHLO",
+   "kind": "Halogen",
+   "is_mineral": 0
+  },
+  {
+   "id": 18,
+   "name": "Compboard",
+   "code": "COMP",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 19,
+   "name": "Construction Materials",
+   "code": "CMAT",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 20,
+   "name": "Copper",
+   "code": "COPP",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 21,
+   "name": "Copper (Ore)",
+   "code": "COPP",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 22,
+   "name": "Corundum",
+   "code": "CORU",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 23,
+   "name": "Corundum (Raw)",
+   "code": "CORU",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 24,
+   "name": "Degnous Root",
+   "code": "DEGR",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 25,
+   "name": "Diamond",
+   "code": "DIAM",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 26,
+   "name": "Diamond (Raw)",
+   "code": "DIAM",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 27,
+   "name": "Distilled Spirits",
+   "code": "DIST",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 28,
+   "name": "Dolivine",
+   "code": "DOLI",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 29,
+   "name": "E'tam",
+   "code": "ETAM",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 30,
+   "name": "Fireworks",
+   "code": "FIRE",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 31,
+   "name": "Fluorine",
+   "code": "FLUO",
+   "kind": "Halogen",
+   "is_mineral": 0
+  },
+  {
+   "id": 32,
+   "name": "Gasping Weevil Eggs",
+   "code": "GAWE",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 33,
+   "name": "Gold",
+   "code": "GOLD",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 34,
+   "name": "Gold (Ore)",
+   "code": "GOLD",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 35,
+   "name": "Golden Medmon",
+   "code": "GOLM",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 36,
+   "name": "Hadanite",
+   "code": "HADA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 37,
+   "name": "Heart of the Woods",
+   "code": "HOTW",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 38,
+   "name": "Helium",
+   "code": "HELI",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 39,
+   "name": "Hephaestanite",
+   "code": "HEPH",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 40,
+   "name": "Hephaestanite (Raw)",
+   "code": "HEPH",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 41,
+   "name": "Hydrogen",
+   "code": "HYDR",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 42,
+   "name": "Inert Materials",
+   "code": "INER",
+   "kind": "Other",
+   "is_mineral": 0
+  },
+  {
+   "id": 43,
+   "name": "Iodine",
+   "code": "IODI",
+   "kind": "Halogen",
+   "is_mineral": 0
+  },
+  {
+   "id": 44,
+   "name": "Iron",
+   "code": "IRON",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 45,
+   "name": "Iron (Ore)",
+   "code": "IRONO",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 46,
+   "name": "Janalite",
+   "code": "JANA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 47,
+   "name": "Laranite",
+   "code": "LARA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 48,
+   "name": "Laranite (Raw)",
+   "code": "LARA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 49,
+   "name": "Luminalia Gift",
+   "code": "LUMG",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 50,
+   "name": "Maze",
+   "code": "MAZE",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 51,
+   "name": "Medical Supplies",
+   "code": "MEDS",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 52,
+   "name": "Neon",
+   "code": "NEON",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 53,
+   "name": "Osoian Hides",
+   "code": "OSOH",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 54,
+   "name": "Party Favors",
+   "code": "PART",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 55,
+   "name": "Pitambu",
+   "code": "PITA",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 56,
+   "name": "Processed Food",
+   "code": "PFOO",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 57,
+   "name": "Prota",
+   "code": "PROT",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 58,
+   "name": "Quantainium",
+   "code": "QUAN",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 59,
+   "name": "Quantainium (Raw)",
+   "code": "QUAN",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 60,
+   "name": "Quartz",
+   "code": "QUAR",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 61,
+   "name": "Quartz (Raw)",
+   "code": "QUAR",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 62,
+   "name": "Ranta Dung",
+   "code": "RAND",
+   "kind": "Agricultural",
+   "is_mineral": 0
+  },
+  {
+   "id": 63,
+   "name": "Recycled Material Composite",
+   "code": "RMC",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 64,
+   "name": "Year of the Monkey Envelope",
+   "code": "YTMO",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 65,
+   "name": "Revenant Pod",
+   "code": "REVP",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 66,
+   "name": "Revenant Tree Pollen",
+   "code": "REVE",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 67,
+   "name": "Scrap",
+   "code": "SCRA",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 68,
+   "name": "SLAM",
+   "code": "SLAM",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 69,
+   "name": "Souvenirs",
+   "code": "SOUV",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 70,
+   "name": "Stims",
+   "code": "STIM",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 71,
+   "name": "Stone Bug Shell",
+   "code": "STBS",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 72,
+   "name": "Sunset Berries",
+   "code": "SUNB",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 73,
+   "name": "Taranite",
+   "code": "TARA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 74,
+   "name": "Taranite (Raw)",
+   "code": "TARA",
+   "kind": "Mineral",
+   "is_mineral": 1
+  },
+  {
+   "id": 75,
+   "name": "Titanium",
+   "code": "TITA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 76,
+   "name": "Titanium (Ore)",
+   "code": "TITA",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 77,
+   "name": "Tungsten",
+   "code": "TUNG",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 78,
+   "name": "Tungsten (Ore)",
+   "code": "TUNG",
+   "kind": "Metal",
+   "is_mineral": 1
+  },
+  {
+   "id": 79,
+   "name": "Waste",
+   "code": "WAST",
+   "kind": "Waste",
+   "is_mineral": 0
+  },
+  {
+   "id": 80,
+   "name": "WiDoW",
+   "code": "WIDO",
+   "kind": "Drug",
+   "is_mineral": 0
+  },
+  {
+   "id": 81,
+   "name": "Year of the Rooster Envelope",
+   "code": "YTRO",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 82,
+   "name": "AcryliPlex Composite",
+   "code": "ACCO",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 83,
+   "name": "Diluthermex",
+   "code": "DILU",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 84,
+   "name": "Zeta-Prolanide",
+   "code": "ZEPR",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 85,
+   "name": "Ammonia",
+   "code": "AMMO",
+   "kind": "Raw Materials",
+   "is_mineral": 0
+  },
+  {
+   "id": 87,
+   "name": "Quantum Fuel",
+   "code": "QFUE",
+   "kind": "Fuel",
+   "is_mineral": 0
+  },
+  {
+   "id": 88,
+   "name": "Year of the Dog Envelope",
+   "code": "YTDO",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 91,
+   "name": "Marok Gem",
+   "code": "MARG",
+   "kind": "Animal",
+   "is_mineral": 0
+  },
+  {
+   "id": 92,
+   "name": "Kopion Horn",
+   "code": "KOPH",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 93,
+   "name": "DynaFlex",
+   "code": "DYNF",
+   "kind": "Man-Made",
+   "is_mineral": 0
+  },
+  {
+   "id": 95,
+   "name": "Redfin Energy Modulators",
+   "code": "REMO",
+   "kind": "Electronics",
+   "is_mineral": 0
+  },
+  {
+   "id": 96,
+   "name": "LifeCure Medsticks",
+   "code": "LMED",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 97,
+   "name": "Human Food Bars",
+   "code": "HFBA",
+   "kind": "Commodity",
+   "is_mineral": 0
+  },
+  {
+   "id": 98,
+   "name": "DCSR2",
+   "code": "DCSR",
+   "kind": "Agricultural",
+   "is_mineral": 0
+  },
+  {
+   "id": 100,
+   "name": "Silicon",
+   "code": "SILI",
+   "kind": "Raw Materials",
+   "is_mineral": 0
+  },
+  {
+   "id": 101,
+   "name": "Pressurized Ice",
+   "code": "PICE",
+   "kind": "Raw Materials",
+   "is_mineral": 0
+  },
+  {
+   "id": 102,
+   "name": "Carbon",
+   "code": "CARB",
+   "kind": "Raw Materials",
+   "is_mineral": 0
+  },
+  {
+   "id": 103,
+   "name": "Tin",
+   "code": "TIN",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 104,
+   "name": "Hydrogen Fuel",
+   "code": "HYDF",
+   "kind": "Fuel",
+   "is_mineral": 0
+  },
+  {
+   "id": 105,
+   "name": "Decari Pod",
+   "code": "DECA",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 106,
+   "name": "Nitrogen",
+   "code": "NITR",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 108,
+   "name": "Apoxygenite",
+   "code": "APOX",
+   "kind": "Chemical",
+   "is_mineral": 0
+  },
+  {
+   "id": 109,
+   "name": "Steel",
+   "code": "STEE",
+   "kind": "Alloy",
+   "is_mineral": 0
+  },
+  {
+   "id": 110,
+   "name": "Cobalt",
+   "code": "COBA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 111,
+   "name": "Argon",
+   "code": "ARGO",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 112,
+   "name": "Bioplastic",
+   "code": "BIOPL",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 113,
+   "name": "Carbon-Silk",
+   "code": "CSIL",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 114,
+   "name": "Methane",
+   "code": "METH",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 115,
+   "name": "Omnapoxy",
+   "code": "OMPO",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 116,
+   "name": "Potassium",
+   "code": "POTA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 118,
+   "name": "Xa'Pyen",
+   "code": "XAPY",
+   "kind": "Alloy",
+   "is_mineral": 0
+  },
+  {
+   "id": 119,
+   "name": "Diamond Laminate",
+   "code": "DIAL",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 120,
+   "name": "Fresh Food",
+   "code": "FFOO",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 121,
+   "name": "Partillium",
+   "code": "PRTL",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 122,
+   "name": "Stileron",
+   "code": "STIL",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 123,
+   "name": "Mercury",
+   "code": "MERC",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 124,
+   "name": "Riccite",
+   "code": "RICC",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 125,
+   "name": "Ice (Raw)",
+   "code": "ICEW",
+   "kind": "Liquid",
+   "is_mineral": 0
+  },
+  {
+   "id": 126,
+   "name": "CK13-GID Seed Blend",
+   "code": "CK13",
+   "kind": "Seed",
+   "is_mineral": 0
+  },
+  {
+   "id": 127,
+   "name": "Dymantium",
+   "code": "DYMA",
+   "kind": "Explosive",
+   "is_mineral": 0
+  },
+  {
+   "id": 128,
+   "name": "Ship Ammunition",
+   "code": "SHPA",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 129,
+   "name": "HexaPolyMesh Coating",
+   "code": "HPMC",
+   "kind": "Crafting",
+   "is_mineral": 0
+  },
+  {
+   "id": 130,
+   "name": "Atlasium",
+   "code": "ATLA",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 132,
+   "name": "Thermalfoam",
+   "code": "FOAM",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 133,
+   "name": "Neograph",
+   "code": "NEOG",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 134,
+   "name": "Sarilus",
+   "code": "SARI",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 135,
+   "name": "Silnex",
+   "code": "SILN",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 136,
+   "name": "Lycara",
+   "code": "LYCA",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 137,
+   "name": "Lastaphrene",
+   "code": "LAST",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 138,
+   "name": "Elespo",
+   "code": "ELES",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 139,
+   "name": "Cadmium Allinide",
+   "code": "CAAL",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 140,
+   "name": "Krypton",
+   "code": "KRYP",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 141,
+   "name": "Anti-Hydrogen",
+   "code": "AHYD",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 142,
+   "name": "Jahlium",
+   "code": "JAHL",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 143,
+   "name": "Magnesium",
+   "code": "MAGN",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 144,
+   "name": "Jumping Limes",
+   "code": "JUMP",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 145,
+   "name": "Lunes",
+   "code": "LUNE",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 146,
+   "name": "Arsenic",
+   "code": "ARSE",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 148,
+   "name": "Coal",
+   "code": "COAL",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 149,
+   "name": "Crude Oil",
+   "code": "COIL",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 150,
+   "name": "Phosphorus",
+   "code": "PHOS",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 151,
+   "name": "Selenium",
+   "code": "SELE",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 152,
+   "name": "Tellurium",
+   "code": "TELL",
+   "kind": "Non-Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 153,
+   "name": "Tritium",
+   "code": "TRIT",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 154,
+   "name": "Xenon",
+   "code": "XENO",
+   "kind": "Gas",
+   "is_mineral": 0
+  },
+  {
+   "id": 155,
+   "name": "Dopple",
+   "code": "DOPP",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 156,
+   "name": "Freeze",
+   "code": "FREE",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 157,
+   "name": "Glow",
+   "code": "GLOW",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 158,
+   "name": "Mala",
+   "code": "MALA",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 159,
+   "name": "Thrust",
+   "code": "THRU",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 160,
+   "name": "Zip",
+   "code": "ZIP",
+   "kind": "Vice",
+   "is_mineral": 0
+  },
+  {
+   "id": 161,
+   "name": "Silicon (Raw)",
+   "code": "SILI",
+   "kind": "Raw Materials",
+   "is_mineral": 0
+  },
+  {
+   "id": 162,
+   "name": "Stileron (Raw)",
+   "code": "STIL",
+   "kind": "Man-made",
+   "is_mineral": 0
+  },
+  {
+   "id": 163,
+   "name": "Riccite (Ore)",
+   "code": "RICO",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 164,
+   "name": "Year of the Pig Envelope",
+   "code": "YTPO",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 165,
+   "name": "Cobalt (Raw)",
+   "code": "COBA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 166,
+   "name": "Detatrine",
+   "code": "DETA",
+   "kind": "Explosive",
+   "is_mineral": 0
+  },
+  {
+   "id": 167,
+   "name": "Beradom",
+   "code": "BERA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 168,
+   "name": "Glacosite",
+   "code": "GLAC",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 169,
+   "name": "Feynmaline",
+   "code": "FEYN",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 170,
+   "name": "Carinite",
+   "code": "CARI",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 171,
+   "name": "Jaclium",
+   "code": "JACL",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 172,
+   "name": "Saldynium (Ore)",
+   "code": "SALD",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 173,
+   "name": "Jaclium (Ore)",
+   "code": "JACO",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 174,
+   "name": "Cave Kopion Horn",
+   "code": "CAVEK",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 175,
+   "name": "Tundra Kopion Horn",
+   "code": "KOPT",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 176,
+   "name": "Tin (Ore)",
+   "code": "TINO",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 178,
+   "name": "Carinite (Pure)",
+   "code": "CARP",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 179,
+   "name": "Atacamite",
+   "code": "ATAC",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 180,
+   "name": "Irradiated Kopion Horn",
+   "code": "IKOP",
+   "kind": "Natural",
+   "is_mineral": 0
+  },
+  {
+   "id": 181,
+   "name": "Construction Material Rubble",
+   "code": "CMATR",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 182,
+   "name": "Construction Material Pebbles",
+   "code": "CMATP",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 183,
+   "name": "Construction Material Salvage",
+   "code": "CMATS",
+   "kind": "Scrap",
+   "is_mineral": 0
+  },
+  {
+   "id": 184,
+   "name": "Lindinium",
+   "code": "LIND",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 185,
+   "name": "Lindinium (Ore)",
+   "code": "LINW",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 186,
+   "name": "Organics",
+   "code": "ORGN",
+   "kind": "Organics",
+   "is_mineral": 0
+  },
+  {
+   "id": 187,
+   "name": "Savrilium (Ore)",
+   "code": "SAVW",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 188,
+   "name": "Savrilium",
+   "code": "SAVR",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 189,
+   "name": "Torite (Ore)",
+   "code": "TORIO",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 190,
+   "name": "Torite",
+   "code": "TORI",
+   "kind": "Metal",
+   "is_mineral": 0
+  },
+  {
+   "id": 191,
+   "name": "CryoPod",
+   "code": "CRYP",
+   "kind": "Medical",
+   "is_mineral": 0
+  },
+  {
+   "id": 192,
+   "name": "Year of the Rat Envelope",
+   "code": "YTRO",
+   "kind": "Temporary",
+   "is_mineral": 0
+  },
+  {
+   "id": 193,
+   "name": "Aslarite",
+   "code": "ASLA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 194,
+   "name": "Ouratite",
+   "code": "OURA",
+   "kind": "mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 195,
+   "name": "Molina Mold Treatment",
+   "code": "MOLMT",
+   "kind": "Medicine",
+   "is_mineral": 0
+  },
+  {
+   "id": 196,
+   "name": "Molina Ventilation Filters",
+   "code": "MOLVF",
+   "kind": "Medicine",
+   "is_mineral": 0
+  },
+  {
+   "id": 197,
+   "name": "Molina Mold Samples",
+   "code": "MOLMS",
+   "kind": "Medicine",
+   "is_mineral": 0
+  },
+  {
+   "id": 198,
+   "name": "Wuotan Seed",
+   "code": "WUOT",
+   "kind": "Organic",
+   "is_mineral": 0
+  },
+  {
+   "id": 199,
+   "name": "Aslarite (Raw)",
+   "code": "ASLW",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 200,
+   "name": "Sadaryx",
+   "code": "SADA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 201,
+   "name": "Ship Ammunition - Size 1",
+   "code": "SHPA1",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 202,
+   "name": "Ship Ammunition - Size 2",
+   "code": "SHPA2",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 203,
+   "name": "Ship Ammunition - Size 3",
+   "code": "SHPA3",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 204,
+   "name": "Ship Ammunition - Size 4",
+   "code": "SHPA4",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 205,
+   "name": "Ship Ammunition - Size 5",
+   "code": "SHPA5",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 206,
+   "name": "Ship Ammunition - Size 6",
+   "code": "SHPA6",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 207,
+   "name": "Ship Ammunition - Size 7",
+   "code": "SHPA7",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 208,
+   "name": "Ship Decoy Countermeasures",
+   "code": "SHPDC",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 209,
+   "name": "Ship Noise Countermeasures",
+   "code": "SHPNC",
+   "kind": "Ammunition",
+   "is_mineral": 0
+  },
+  {
+   "id": 210,
+   "name": "Ouratite (Raw)",
+   "code": "OURW",
+   "kind": "Minteral",
+   "is_mineral": 0
+  },
+  {
+   "id": 212,
+   "name": "Sadaryx (Raw)",
+   "code": "SADA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 213,
+   "name": "Caranite (Raw)",
+   "code": "CARW",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 214,
+   "name": "Caranite",
+   "code": "CARA",
+   "kind": "Mineral",
+   "is_mineral": 0
+  },
+  {
+   "id": 215,
+   "name": "Blue Bilva",
+   "code": "BLUE",
+   "kind": "Food",
+   "is_mineral": 0
+  },
+  {
+   "id": 217,
+   "name": "Construction Pieces",
+   "code": "CP",
+   "kind": "Scrap",
+   "is_mineral": 0
+  }
+ ],
+ "message": ""
+}
