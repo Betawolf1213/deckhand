@@ -40,4 +40,5 @@ Compare with `SHA256.txt` attached to this release.
 English voice commands only (more languages are on the roadmap). Over speakers Deckhand can't hear you
 while it is talking; a headset avoids that. If the game runs as administrator, Deckhand must too.
 
+MIT licensed; the bundled Vosk engine and model are Apache 2.0 (see `THIRD_PARTY_NOTICES.md` in the zip).
 Fan-made tool, not affiliated with or endorsed by Cloud Imperium Games.

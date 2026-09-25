@@ -37,6 +37,8 @@ try {
     Copy-Item -Recurse -Force (Join-Path $root 'docs') (Join-Path $stage 'docs')
     Copy-Item (Join-Path $root 'scripts\start.ps1'), (Join-Path $root 'scripts\fetch_models.ps1') (Join-Path $stage 'scripts')
     Copy-Item (Join-Path $root 'start.bat'), (Join-Path $root 'README.md'), (Join-Path $root '.env.example') $stage
+    Copy-Item (Join-Path $root 'LICENSE'), (Join-Path $root 'THIRD_PARTY_NOTICES.md') $stage
+    Copy-Item -Recurse -Force (Join-Path $root 'licenses') (Join-Path $stage 'licenses')
 
     # Drop caches, tests and local settings from the staged copy.
     Get-ChildItem $stage -Recurse -Force -Directory -Filter '__pycache__' | Remove-Item -Recurse -Force

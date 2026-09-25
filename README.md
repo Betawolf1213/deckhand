@@ -38,7 +38,7 @@ Building from source instead? See [Setup](#setup).
 - [How it works](#how-it-works)
 - [Roadmap](#roadmap)
 - [Setup](#setup) · [Run](#run) · [Engine CLI](#engine-cli-reference) · [Tests](#tests) · [Layout](#layout) · [Releases](#releases)
-- [Known limitations](#known-limitations) · [Credits](#credits)
+- [Known limitations](#known-limitations) · [Credits](#credits) · [License](#license)
 
 ---
 
@@ -298,6 +298,7 @@ cd frontend; python -m unittest discover -s tests             # GUI: 267 tests
 
 ```
 build.zig, build.zig.zon, start.bat         ← one-click launcher (hidden engine + GUI)
+LICENSE, THIRD_PARTY_NOTICES.md, licenses/  ← MIT for Deckhand; bundled Vosk parts are Apache 2.0
 backend/
   resources/  deckhand.rc + app.manifest + app.asinvoker.manifest
   src/
@@ -319,11 +320,11 @@ docs/       IPC.md (pipe protocol), COMMANDS.md (command file format), images/ (
 models/     (fetched by scripts/fetch_models.ps1)
 vendor/     (fetched by scripts/fetch_models.ps1)
 scripts/    start.ps1 (launcher logic behind start.bat), fetch_models.ps1, package.ps1
-.github/    workflows/release.yml (build, test, package, publish), RELEASE_NOTES.md
+.github/    workflows/release.yml (build, test, package, publish), workflows/pylint.yml, RELEASE_NOTES.md
 ```
 
 `.\scripts\package.ps1` builds `release\Deckhand-v2.0.0.zip` (~54 MB): the exe
-and its DLLs, the speech model, GUI, config, docs and `start.bat`, laid out so users just unzip and
+and its DLLs, the speech model, GUI, config, docs, licences and `start.bat`, laid out so users just unzip and
 double-click `start.bat` (no Zig needed).
 
 ## Releases
@@ -362,3 +363,9 @@ has no license file, so reuse of its phrases and data depends on its author's pe
 Lookup data comes from [UEX](https://uexcorp.space/), the
 [Star Citizen Wiki](https://starcitizen.tools/) and scunpacked. Star Citizen is a
 trademark of Cloud Imperium Games; Deckhand is not affiliated with or endorsed by it.
+
+## License
+
+Deckhand's code is released under the [MIT License](LICENSE). The bundled Vosk runtime and speech model are
+Apache 2.0, and the default phrases and mining tables credited above keep their original author's rights; see
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
